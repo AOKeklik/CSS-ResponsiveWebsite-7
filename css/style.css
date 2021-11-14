@@ -1,19 +1,115 @@
+/********* fonts *********/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&family=Open+Sans:wght@300;400;600;700&display=swap');
+/********* fonts *********/
+/********* globals *********/
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: inherit;
+}
+html {
+    font-size: 100%; /* 16px */
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+ul {
+    list-style-type: none;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    color: initial;
+}
+/********* globals *********/
+/********* generals *********/
+.container {
 
-/* globals */
-    *, *::after, *::before {
-        padding: 0;
-        margin: 0;
-        border: 0;
-        box-sizing: inherit;
+}
+/* btn */
+.btn {
+
+}
+.btn:hover {
+
+}
+/* btn */
+    /* btn-success */
+    .btn-success {
+
     }
-    html {
-        font-size: 100%; /* 16px */
+    .btn-success:hover {
+
     }
-    body {
-        box-sizing: border-box;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        line-height: 1.5;
+    /* btn-success */
+/********* generals *********/
+/********* header *********/
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    min-height: 8rem; /* 128px */
+    background-color: lightblue;
+}
+    /* navbar */
+    .navbar-brand {
+
     }
-/* globals */
+    .navbar {
+        flex: 0 75%;
+        display: flex;
+        justify-content: space-between;
+
+        /* background-color: lightcoral; */
+    }
+        .navbar-nav {
+            flex: 0 1 80%;
+
+            /* background-color: lightgoldenrodyellow; */
+        }
+            .navbar-list {
+                display: flex;
+                justify-content: space-between;
+
+                /* background-color: lightgray; */
+            }
+                .navbar-item {
+
+                }
+                    .navbar-link, .navbar-link:link, .navbar-link:visited {
+                        color: rgba(0,0,0, .8);
+                        text-transform: uppercase;
+                        font-size: .9rem;
+                        font-weight: 600;
+                    }
+    /* navbar */
+    /* sosial media icons */
+    .icons {
+
+    }
+    .icons-header {
+        position: absolute;
+        top: 2%;
+        right: 10%;
+    }
+        .icons-list {
+            display: flex;
+
+            background-color: lightgreen;
+        }
+            .icons-item {
+
+            }
+                .icons-link {
+
+                }
+    .icons-footer {
+
+    }
+    /* sosial media icons */
+/********* header *********/
