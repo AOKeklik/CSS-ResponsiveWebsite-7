@@ -1,0 +1,28 @@
+/********* navbar navigation  *********/
+.navbar {
+    flex: 0 75%;
+    display: flex;
+    justify-content: space-between;
+
+    // background-color: lightcoral;
+
+    &-nav {
+        flex: 0 1 80%;
+
+        // background-color: lightgoldenrodyellow;
+    }
+        &-list {
+            display: flex;
+            justify-content: space-between;
+
+            // background-color: lightgray;
+        }
+            &-item {}
+                &-link, &-link:link, &-link:visited {
+                    color: rgba(0,0,0, .8);
+                    text-transform: uppercase;
+                    font-size: .9rem;
+                    font-weight: 600;
+                }
+}
+/********* navbar navigation  *********/
