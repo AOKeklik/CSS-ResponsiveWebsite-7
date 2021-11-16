@@ -19,5 +19,6 @@
   "homepage": "https://github.com/AOKeklik/CSS-ResponsiveWebsite-7#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "dependencies": {}
 }
