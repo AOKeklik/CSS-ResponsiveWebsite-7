@@ -110,18 +110,18 @@ a, a:link, a:visited {
       pointer-events: none; }
       .navbar-link span:first-child {
         position: relative;
-        left: 0;
-        bottom: 0;
-        transition-property: bottom, opacity;
+        top: 0;
+        right: 0;
+        transition-property: right, opacity;
         transition-duration: .3s;
         transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1); }
       .navbar-link span:last-child {
         opacity: 0;
         position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        transition-property: top, opacity;
+        top: 49%;
+        left: 100%;
+        transform: translateY(-50%);
+        transition-property: left, opacity;
         transition-duration: .3s;
         transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1); }
     .navbar-link::before {
@@ -156,10 +156,10 @@ a, a:link, a:visited {
       transition: all 0s; }
     .navbar-link:hover span:first-child, .navbar-link:active span:first-child {
       opacity: 0;
-      bottom: 100%; }
+      right: 100%; }
     .navbar-link:hover span:last-child, .navbar-link:active span:last-child {
       opacity: 1;
-      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%); }
 
 /********* navbar navigation  *********/
