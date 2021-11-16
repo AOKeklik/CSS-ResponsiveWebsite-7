@@ -24,7 +24,7 @@
         &:last-child {
             opacity: 0;
             top: 100%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, 0); /* -50% 0 Ile Degerini Resetledik */
         }
     }
 

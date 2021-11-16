@@ -36,8 +36,7 @@ a, a:link, a:visited {
   align-items: center;
   position: relative;
   min-height: 8rem;
-  /* 128px */
-  background-color: lightblue; }
+  /* 128px */ }
   .header-icons {
     position: absolute;
     top: 2%;
@@ -68,7 +67,8 @@ a, a:link, a:visited {
     .btn span:last-child {
       opacity: 0;
       top: 100%;
-      transform: translate(-50%, 0); }
+      transform: translate(-50%, 0);
+      /* -50% 0 Ile Degerini Resetledik */ }
   .btn:hover, .btn:active {
     /* btn:hover span:first-child { } */ }
     .btn:hover span:first-child, .btn:active span:first-child {
@@ -97,15 +97,70 @@ a, a:link, a:visited {
   display: flex;
   justify-content: space-between; }
   .navbar-nav {
-    flex: 0 1 80%; }
+    flex: 0 1 80%;
+    display: flex;
+    align-items: center; }
   .navbar-list {
+    flex-basis: 80%;
     display: flex;
     justify-content: space-between; }
-  .navbar-link, .navbar-link:link, .navbar-link:visited {
-    color: rgba(0, 0, 0, 0.8);
-    text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 600; }
+  .navbar-link {
+    position: relative; }
+    .navbar-link span {
+      pointer-events: none; }
+      .navbar-link span:first-child {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        transition-property: bottom, opacity;
+        transition-duration: .3s;
+        transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1); }
+      .navbar-link span:last-child {
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition-property: top, opacity;
+        transition-duration: .3s;
+        transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1); }
+    .navbar-link::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 3px;
+      transition: width 0s, background-color .3s; }
+    .navbar-link::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 3px;
+      background-color: #3dbe71;
+      transition: width .3s; }
+    .navbar-link:link, .navbar-link:visited {
+      color: rgba(0, 0, 0, 0.8);
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: 600; }
+    .navbar-link:hover::before, .navbar-link:active::before {
+      width: 100%;
+      background-color: #3dbe71;
+      transition: width .3s; }
+    .navbar-link:hover::after, .navbar-link:active::after {
+      width: 100%;
+      background-color: transparent;
+      transition: all 0s; }
+    .navbar-link:hover span:first-child, .navbar-link:active span:first-child {
+      opacity: 0;
+      bottom: 100%; }
+    .navbar-link:hover span:last-child, .navbar-link:active span:last-child {
+      opacity: 1;
+      top: 50%;
+      transform: translate(-50%, -50%); }
 
 /********* navbar navigation  *********/
 /********* sosial media icons *********/
