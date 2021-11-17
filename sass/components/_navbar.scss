@@ -41,12 +41,12 @@
                             transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1);
                         }
                         &:last-child {
-                            opacity: 0;
+                            opacity: 1;
                             position: absolute;
                             // top: 100%;
                             // left: 50%;
                             // transform: translateX(-50%);
-                            top: 50%;
+                            top: 49%;
                             left: 100%;
                             transform: translateY(-50%);
 
