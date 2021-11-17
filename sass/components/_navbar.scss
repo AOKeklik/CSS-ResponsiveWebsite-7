@@ -37,7 +37,7 @@
                             
                             transition-property: right, opacity;
                             // transition-property: bottom, opacity;
-                            transition-duration:  .3s; 
+                            transition-duration: .3s, .1s; 
                             transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1);
                         }
                         &:last-child {
@@ -46,7 +46,7 @@
                             // top: 100%;
                             // left: 50%;
                             // transform: translateX(-50%);
-                            top: 49%;
+                            top: 50%;
                             left: 100%;
                             transform: translateY(-50%);
 
