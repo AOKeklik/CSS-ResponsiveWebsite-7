@@ -1,0 +1,36 @@
+.sec-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39rem;
+    padding: 4rem 6rem 1rem 6rem;
+
+    // background-color: lightsalmon;
+
+    &-container {
+        display: flex;
+        height: 100%;
+    }
+    &-left {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 60%;
+
+        // background-color: lightcyan;
+    }
+    &-right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // background-color: lightgoldenrodyellow;
+    }
+    &-img {
+        width: 90%;
+        height: 90%;
+    }
+}
