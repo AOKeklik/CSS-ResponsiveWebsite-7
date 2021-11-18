@@ -7,8 +7,8 @@
     border-radius: 5rem;
     cursor: pointer;
     text-transform: uppercase;
-    color: #fff;
-    font-size: .8rem;
+    color: $colorWhite;
+    font-size: 0.8rem;
     letter-spacing: 1px;
 
     span {
@@ -18,17 +18,19 @@
         transform: translate(-50%, -50%);
 
         transition-property: top, opacity;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1);
 
         &:last-child {
-            opacity: 0;
-            top: 100%;
-            transform: translate(-50%, 0); /* -50% 0 Ile Degerini Resetledik */
+        opacity: 0;
+        top: 100%;
+        transform: translate(-50%, 0); /* -50% 0 Ile Degerini Resetledik */
         }
     }
 
-    &:hover, &:active { /* btn:hover span:first-child { } */
+    &:hover,
+    &:active {
+        /* btn:hover span:first-child { } */
         span {
             &:first-child {
                 opacity: 0;
@@ -44,20 +46,20 @@
     }
 }
 /* btn */
-    /* btn-success */
-    .btn-success {
-        background-color: #3dbe71;
+/* btn-primary */
+.btn-primary {
+    background-color: $colorPrimary;
 
-        &:hover {
-            background-color: #5db380;
-        }
+    &:hover {
+        background-color: #5db380;
     }
-    /* btn-success */
-    /* btn-middle */
-    .btn-middle {
-        font-size: .9rem;
-        padding: 1.5rem 7rem;
-    }
-    /* btn-middle */
-    /* btn-info */
+}
+/* btn-primary */
+/* btn-middle */
+.btn-middle {
+    font-size: 0.9rem;
+    padding: 1.5rem 7rem;
+}
+/* btn-middle */
+/* btn-info */
 /********** btn **********/

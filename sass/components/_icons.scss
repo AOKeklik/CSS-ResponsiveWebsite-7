@@ -1,22 +1,25 @@
 /********* sosial media icons *********/
-.icons {    
+.icons {
     &-list {
         display: flex;
     }
-        &-link {
-            &, &:link, &:active {
-                padding: .5rem;
-            }
-            &:hover, &:active {
-                .fab {
-                    color: #17015d;
-                }
+    &-link {
+        &,
+        &:link,
+        &:active {
+            padding: 0.5rem;
+        }
+        &:hover,
+        &:active {
+            .fab {
+                color: $colorSecondary;
             }
         }
-            &-fab {
-                width: 1rem;
-                height: 1rem;
-                color: #5db380;
-            }
+    }
+    &-fab {
+        width: 1rem;
+        height: 1rem;
+        color: $colorPrimary;
+    }
 }
 /********* sosial media icons *********/

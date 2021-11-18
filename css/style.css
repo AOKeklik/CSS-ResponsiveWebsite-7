@@ -1,3 +1,7 @@
+/********* abstracts *********/
+/* main color */
+/* font color */
+/* general color */
 /********* base *********/
 /********* fonts *********/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&family=Open+Sans:wght@300;400;600;700&display=swap");
@@ -67,7 +71,7 @@ a, a:link, a:visited {
   cursor: pointer;
   text-transform: uppercase;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 1px; }
   .btn span {
     position: absolute;
@@ -75,7 +79,7 @@ a, a:link, a:visited {
     left: 50%;
     transform: translate(-50%, -50%);
     transition-property: top, opacity;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1); }
     .btn span:last-child {
       opacity: 0;
@@ -94,16 +98,16 @@ a, a:link, a:visited {
       transform: translate(-50%, -50%); }
 
 /* btn */
-/* btn-success */
-.btn-success {
+/* btn-primary */
+.btn-primary {
   background-color: #3dbe71; }
-  .btn-success:hover {
+  .btn-primary:hover {
     background-color: #5db380; }
 
-/* btn-success */
+/* btn-primary */
 /* btn-middle */
 .btn-middle {
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 1.5rem 7rem; }
 
 /* btn-middle */
@@ -131,7 +135,7 @@ a, a:link, a:visited {
         top: 0;
         right: 0;
         transition-property: right, opacity;
-        transition-duration: .3s, .1s;
+        transition-duration: 0.3s, 0.1s;
         transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1); }
       .navbar-link span:last-child {
         opacity: 0;
@@ -140,34 +144,34 @@ a, a:link, a:visited {
         left: 100%;
         transform: translateY(-50%);
         transition-property: left, opacity;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1); }
     .navbar-link::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: -5px;
       width: 0%;
       height: 3px;
-      transition: width 0s, background-color .3s; }
+      transition: width 0s, background-color 0.3s; }
     .navbar-link::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       bottom: -5px;
       width: 0%;
       height: 3px;
       background-color: #3dbe71;
-      transition: width .3s; }
+      transition: width 0.3s; }
     .navbar-link:link, .navbar-link:visited {
-      color: rgba(0, 0, 0, 0.8);
+      color: rgba(0, 0, 0, 0.7);
       text-transform: uppercase;
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-weight: 600; }
     .navbar-link:hover::before, .navbar-link:active::before {
       width: 100%;
       background-color: #3dbe71;
-      transition: width .3s; }
+      transition: width 0.3s; }
     .navbar-link:hover::after, .navbar-link:active::after {
       width: 100%;
       background-color: transparent;
@@ -186,7 +190,7 @@ a, a:link, a:visited {
   display: flex; }
 
 .icons-link, .icons-link:link, .icons-link:active {
-  padding: .5rem; }
+  padding: 0.5rem; }
 
 .icons-link:hover .fab, .icons-link:active .fab {
   color: #17015d; }
@@ -194,7 +198,7 @@ a, a:link, a:visited {
 .icons-fab {
   width: 1rem;
   height: 1rem;
-  color: #5db380; }
+  color: #3dbe71; }
 
 /********* sosial media icons *********/
 /********* pages *********/
