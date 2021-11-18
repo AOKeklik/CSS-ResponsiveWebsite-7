@@ -40,10 +40,24 @@ a, a:link, a:visited {
   .t1 span {
     display: block; }
 
+.t2 {
+  font: 800 2rem/1.2 'Nunito', sans-serif;
+  /* 32px */
+  color: #17015d; }
+
+.t3 {
+  font-size: 1.2rem;
+  /* 19.2px */
+  color: #17015d; }
+
 .t4 {
   font-size: 1.1rem;
-  /* 17.6px */
-  color: #504f4f; }
+  /* 17.6px */ }
+
+.s1 {
+  font-size: .9rem;
+  /* 14.4px */
+  color: #909090; }
 
 /********* layouts *********/
 /********* header *********/
@@ -202,6 +216,7 @@ a, a:link, a:visited {
 
 /********* sosial media icons *********/
 /********* pages *********/
+/* 1 section info */
 .sec-info {
   display: flex;
   justify-content: center;
@@ -227,5 +242,43 @@ a, a:link, a:visited {
     width: 90%;
     height: 90%; }
 
+/* 1 section info */
+/* 2 section features */
+.sec-features {
+  min-height: 50rem;
+  padding: 4rem 6rem;
+  display: flex;
+  /* sectop and secbottom */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .sec-features-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    text-align: center; }
+  .sec-features-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 32rem;
+    /* 512px */ }
+  .sec-features-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 27%;
+    /* 332.37px */
+    height: 13rem;
+    /* 208px */
+    text-align: justify; }
+  .sec-features-icon {
+    font-size: 2.5rem;
+    color: #3dbe71; }
+
+/* 2 section features */
 /********* generals *********/
 /********* generals *********/

@@ -1,12 +1,23 @@
 .t1 {
     font: 800 2.3rem/1.3 'Nunito', sans-serif; /* 36.8px */
-    color: #17015d;
+    color: $colorSecondary;
 
     span {
         display: block;
     }
 }
+.t2 {
+    font: 800 2rem/1.2 'Nunito', sans-serif; /* 32px */
+    color: $colorSecondary;
+}
+.t3 {
+    font-size: 1.2rem; /* 19.2px */
+    color: $colorSecondary;
+}
 .t4 {
     font-size: 1.1rem; /* 17.6px */
-    color: #504f4f;
+}
+.s1 {
+    font-size: .9rem; /* 14.4px */
+    color: #909090;
 }
