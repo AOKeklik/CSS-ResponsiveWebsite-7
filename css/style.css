@@ -43,11 +43,13 @@ a, a:link, a:visited {
 .t2 {
   font: 800 2rem/1.2 'Nunito', sans-serif;
   /* 32px */
+  text-transform: capitalize;
   color: #17015d; }
 
 .t3 {
   font-size: 1.2rem;
   /* 19.2px */
+  text-transform: capitalize;
   color: #17015d; }
 
 .t4 {
@@ -58,6 +60,15 @@ a, a:link, a:visited {
   font-size: .9rem;
   /* 14.4px */
   color: #909090; }
+
+.f-left {
+  float: left !important; }
+
+.f-right {
+  float: right !important; }
+
+.text-right {
+  text-align: right !important; }
 
 /********* layouts *********/
 /********* header *********/
@@ -280,5 +291,74 @@ a, a:link, a:visited {
     color: #3dbe71; }
 
 /* 2 section features */
+/* 3 section workflow */
+.sec-workflow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 68rem;
+  /* 1088px */
+  padding: 4rem 0 2rem 0;
+  /* 64px 0 32px 0 */
+  background-color: #e3f5eb; }
+  .sec-workflow-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 6rem;
+    /* 96px */
+    text-align: center;
+    background-color: lightsalmon; }
+  .sec-workflow-bottom {
+    flex: 0 85%;
+    display: flex;
+    background-color: lightskyblue; }
+  .sec-workflow-flow {
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+  .sec-workflow-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 4px;
+    background-color: #e3a396; }
+  .sec-workflow-circle {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: #e3a396; }
+  .sec-workflow-left {
+    flex: 0 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  .sec-workflow-right {
+    flex: 0 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .sec-workflow-box {
+    width: 80%;
+    height: 10rem;
+    /* 160px */ }
+  .sec-workflow-heading {
+    letter-spacing: 1px;
+    margin-bottom: .5rem; }
+  .sec-workflow-icon {
+    float: left;
+    width: 7rem;
+    height: 7rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    border: 4px solid #e3a396;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    shape-outside: circle(50%); }
+
+/* 3 section workflow */
 /********* generals *********/
 /********* generals *********/
