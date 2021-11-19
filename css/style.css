@@ -309,12 +309,10 @@ a, a:link, a:visited {
     width: 70%;
     height: 6rem;
     /* 96px */
-    text-align: center;
-    background-color: lightsalmon; }
+    text-align: center; }
   .sec-workflow-bottom {
     flex: 0 85%;
-    display: flex;
-    background-color: lightskyblue; }
+    display: flex; }
   .sec-workflow-flow {
     flex: 1;
     display: flex;
