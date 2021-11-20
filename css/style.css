@@ -104,7 +104,8 @@ a, a:link, a:visited {
   /* btn-primary */
   /* btn-success */
   /* btn-danger */
-  /* btn-middle */ }
+  /* btn-middle */
+  /* btn-large */ }
   .btn span {
     position: absolute;
     top: 50%;
@@ -143,6 +144,9 @@ a, a:link, a:visited {
   .btn-middle {
     font-size: 0.9rem;
     padding: 1.5rem 7rem; }
+  .btn-large {
+    font-size: .9rem;
+    padding: 2rem 8rem; }
 
 /* btn */
 /********** btn **********/
@@ -535,5 +539,24 @@ a, a:link, a:visited {
     width: 100%; }
 
 /* 5 section card */
+/* 6 section idea */
+.sec-idea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(../../imgs/sec-idea-bg-2000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .sec-idea-heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: #fff;
+    letter-spacing: 2px; }
+
+/* 6 section idea */
 /********* generals *********/
 /********* generals *********/

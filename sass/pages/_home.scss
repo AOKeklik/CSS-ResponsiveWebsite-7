@@ -210,3 +210,24 @@
     }
 }
 /* 5 section card */
+/* 6 section idea */
+.sec-idea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    background-image: linear-gradient(to bottom right, rgba($colorWhite, .6), rgba($colorWhite, .5)), url(../../imgs/sec-idea-bg-2000.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &-heading {
+        font-family: $fontSecondary;
+        font-weight: 200;
+        font-size: 3.5rem;
+        color: $colorWhite;
+        letter-spacing: 2px;
+    }
+}
+/* 6 section idea */
