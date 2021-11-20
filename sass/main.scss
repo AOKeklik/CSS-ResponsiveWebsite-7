@@ -2,18 +2,19 @@
 @import './abstracts/variables';
 
 /********* base *********/
-@import './base/_base.scss';
-@import './base/_typography.scss';
+@import './base/base';
+@import './base/typography';
 @import './base/utilities';
 
 /********* layouts *********/
-@import './layouts/_header.scss';
+@import './layouts/header';
 
 /********* components *********/
-@import './components/buttons.scss';
-@import './components/navbar.scss';
-@import './components/icons.scss';
-@import './components/counter.scss';
+@import './components/buttons';
+@import './components/navbar';
+@import './components/icons';
+@import './components/counter';
+@import './components/card';
 
 /********* pages *********/
 @import './pages/home';

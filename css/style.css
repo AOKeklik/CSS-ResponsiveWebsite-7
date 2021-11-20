@@ -46,6 +46,8 @@ a, a:link, a:visited {
   /* 32px */
   text-transform: capitalize;
   color: #17015d; }
+  .t2-primary {
+    color: #3dbe71; }
 
 .t3 {
   font-size: 1.2rem;
@@ -98,7 +100,11 @@ a, a:link, a:visited {
   text-transform: uppercase;
   color: #fff;
   font-size: 0.8rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  /* btn-primary */
+  /* btn-success */
+  /* btn-danger */
+  /* btn-middle */ }
   .btn span {
     position: absolute;
     top: 50%;
@@ -122,22 +128,23 @@ a, a:link, a:visited {
       opacity: 1;
       top: 50%;
       transform: translate(-50%, -50%); }
+  .btn-primary {
+    background-color: #3dbe71; }
+    .btn-primary:hover {
+      background-color: #5db380; }
+  .btn-success {
+    background-color: #540d6e; }
+    .btn-success:hover {
+      background-color: #532d61; }
+  .btn-danger {
+    background-color: #ee4266; }
+    .btn-danger:hover {
+      background-color: #e8889c; }
+  .btn-middle {
+    font-size: 0.9rem;
+    padding: 1.5rem 7rem; }
 
 /* btn */
-/* btn-primary */
-.btn-primary {
-  background-color: #3dbe71; }
-  .btn-primary:hover {
-    background-color: #5db380; }
-
-/* btn-primary */
-/* btn-middle */
-.btn-middle {
-  font-size: 0.9rem;
-  padding: 1.5rem 7rem; }
-
-/* btn-middle */
-/* btn-info */
 /********** btn **********/
 /********* navbar navigation  *********/
 .navbar {
@@ -256,6 +263,97 @@ a, a:link, a:visited {
     white-space: nowrap; }
 
 /* counter */
+/* card */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 80%;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2rem 2.5rem #00004040; }
+  .card:nth-child(2) {
+    position: relative;
+    transform: scale(1.1); }
+    .card:nth-child(2)::before {
+      content: url("../../imgs/badge.png");
+      position: absolute;
+      z-index: 10;
+      top: 33%;
+      right: 10%;
+      transform: scale(1.3); }
+    .card:nth-child(2)::after {
+      content: 'Most \a popular.';
+      /* \a white-spacing pre */
+      white-space: pre;
+      position: absolute;
+      z-index: 20;
+      top: 35%;
+      right: 11%;
+      text-align: center;
+      color: #fff;
+      font-weight: 300;
+      font-size: .9rem;
+      letter-spacing: 1.5px;
+      line-height: 1.25; }
+  .card-top {
+    flex: 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    border-radius: 4px 4px 0 0;
+    background-image: linear-gradient(to right bottom, rgba(61, 190, 113, 0.9), rgba(163, 235, 177, 0.7));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); }
+  .card-icon {
+    width: 4rem;
+    height: 4rem;
+    fill: #fff; }
+  .card-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    color: #fff; }
+  .card-title {
+    font-size: 1.2rem;
+    letter-spacing: 2px; }
+  .card-price {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 2.7rem; }
+    .card-price sup {
+      text-transform: uppercase;
+      font-size: .9rem; }
+  .card-description {
+    font-size: 1rem; }
+  .card-bottom {
+    flex: 0 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 4px 4px; }
+  .card-list {
+    width: 80%; }
+  .card-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    color: #9e9e9e;
+    border-bottom: 1px solid #ddd; }
+    .card-item:last-child {
+      border: none; }
+    .card-item span:last-child {
+      font-weight: bold; }
+  .card-pink {
+    background-image: linear-gradient(to bottom right, #ee4266, rgba(232, 136, 156, 0.6)); }
+  .card-purple {
+    background-image: linear-gradient(to bottom right, rgba(84, 13, 110, 0.8), rgba(83, 45, 97, 0.6)); }
+
+/* card */
 /********* pages *********/
 /* 1 section info */
 .sec-info {
@@ -300,6 +398,8 @@ a, a:link, a:visited {
     align-items: center;
     width: 70%;
     text-align: center; }
+  .sec-features-heading {
+    white-space: nowrap; }
   .sec-features-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -399,7 +499,7 @@ a, a:link, a:visited {
   /* 640px */
   padding: 3rem 6rem;
   /* 39px 96rem */
-  background: linear-gradient(to left top, #e3a39660, #ffff0080), url("../../imgs/counter-bg-2000.jpg") center/cover no-repeat; }
+  background: linear-gradient(to left top, #e3a39660, #ffff0080), url("../imgs/counter-bg-2000.jpg") center/cover no-repeat; }
   .sec-counter-container {
     display: flex;
     flex-direction: column;
@@ -418,5 +518,22 @@ a, a:link, a:visited {
     width: 100%; }
 
 /* 4 section counter */
+/* 5 section card */
+.sec-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 55rem;
+  padding: 4rem 5rem 2rem 5rem;
+  background-color: #edeeee; }
+  .sec-card-cards {
+    flex: 0 0 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+
+/* 5 section card */
 /********* generals *********/
 /********* generals *********/

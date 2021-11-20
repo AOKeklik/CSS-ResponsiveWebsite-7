@@ -44,22 +44,35 @@
             }
         }
     }
-}
-/* btn */
-/* btn-primary */
-.btn-primary {
-    background-color: $colorPrimary;
+    /* btn-primary */
+    &-primary {
+        background-color: $colorPrimary;
 
-    &:hover {
-        background-color: #5db380;
+        &:hover {
+            background-color: #5db380;
+        }
+    }
+    /* btn-success */
+    &-success {
+        background-color: #540d6e;
+
+        &:hover {
+            background-color: #532d61;
+        }
+    }
+    /* btn-danger */
+    &-danger {
+        background-color: #ee4266;
+
+        &:hover {
+            background-color: #e8889c;
+        }
+    }
+    /* btn-middle */
+    &-middle {
+        font-size: 0.9rem;
+        padding: 1.5rem 7rem;
     }
 }
-/* btn-primary */
-/* btn-middle */
-.btn-middle {
-    font-size: 0.9rem;
-    padding: 1.5rem 7rem;
-}
-/* btn-middle */
-/* btn-info */
+/* btn */
 /********** btn **********/

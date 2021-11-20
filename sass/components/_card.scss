@@ -1,0 +1,113 @@
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 80%;
+    border-radius: 4px;
+    background-color: $colorWhite;
+    box-shadow: 0 2rem 2.5rem #00004040;
+    
+
+    &:nth-child(2) {
+        position: relative;
+        transform: scale(1.1);
+
+        &::before {
+            content: url('../../imgs/badge.png');
+            position: absolute;
+            z-index: 10;
+            top: 33%;
+            right: 10%;
+            transform: scale(1.3);
+        }
+        &::after {
+            content: 'Most \a popular.'; /* \a white-spacing pre */
+            white-space: pre;
+            position: absolute;
+            z-index: 20;
+            top: 35%;
+            right: 11%;
+            text-align: center;
+            color: $colorWhite;
+            font-weight: 300;
+            font-size: .9rem;
+            letter-spacing: 1.5px;
+            line-height: 1.25;
+        }
+    }
+    &-top {
+        flex: 0 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 0;
+        border-radius: 4px 4px 0 0;
+        background-image: linear-gradient(to right bottom, rgba($colorPrimary, .9), rgba(#a3ebb1, .7));
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    }
+    &-icon {
+        width: 4rem;
+        height: 4rem;
+        fill: $colorWhite;
+    }
+    &-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        color: $colorWhite;
+    }
+    &-title {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    &-price {
+        font-family: $fontSecondary;
+        font-weight: 800;
+        font-size: 2.7rem;
+
+        sup {
+            text-transform: uppercase;
+            font-size: .9rem;
+        }
+    }
+    &-description {
+        font-size: 1rem;
+    }
+    &-bottom {
+        // flex: 1;
+        flex: 0 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius:0 0 4px 4px;
+    }
+    &-list {
+        width: 80%;
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        color: #9e9e9e;
+        border-bottom: 1px solid #ddd;
+
+        &:last-child {
+            border: none;
+        }
+        span:last-child {
+            font-weight: bold;
+        }
+    }
+    &-pink {
+        background-image: linear-gradient(to bottom right, rgba(#ee4266, 1), rgba(#e8889c, .6));
+    }
+    &-purple {
+        background-image: linear-gradient(to bottom right, rgba(#540d6e, .8), rgba(#532d61, .6));
+    }
+}
+/* card */
