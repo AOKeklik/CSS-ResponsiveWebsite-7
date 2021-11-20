@@ -1,6 +1,7 @@
 /********* abstracts *********/
 /* main color */
 /* font color */
+/* font family */
 /* general color */
 /********* base *********/
 /********* fonts *********/
@@ -226,6 +227,35 @@ a, a:link, a:visited {
   color: #3dbe71; }
 
 /********* sosial media icons *********/
+/* counter */
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+  height: 14rem;
+  padding: 3rem 1rem;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+  .counter-icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #fff; }
+  .counter-num {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    color: #fff; }
+  .counter-name {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+    white-space: nowrap; }
+
+/* counter */
 /********* pages *********/
 /* 1 section info */
 .sec-info {
@@ -243,7 +273,7 @@ a, a:link, a:visited {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 60%; }
+    height: 65%; }
   .sec-info-right {
     flex: 1;
     display: flex;
@@ -256,7 +286,7 @@ a, a:link, a:visited {
 /* 1 section info */
 /* 2 section features */
 .sec-features {
-  min-height: 50rem;
+  height: 50rem;
   padding: 4rem 6rem;
   display: flex;
   /* sectop and secbottom */
@@ -266,6 +296,7 @@ a, a:link, a:visited {
   .sec-features-top {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 70%;
     text-align: center; }
@@ -274,7 +305,7 @@ a, a:link, a:visited {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 90%;
-    min-height: 32rem;
+    height: 32rem;
     /* 512px */ }
   .sec-features-feature {
     display: flex;
@@ -305,6 +336,7 @@ a, a:link, a:visited {
   .sec-workflow-top {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 70%;
     height: 6rem;
@@ -334,12 +366,13 @@ a, a:link, a:visited {
     flex: 0 48%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end; }
   .sec-workflow-right {
     flex: 0 48%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    justify-content: space-between; }
   .sec-workflow-box {
     width: 80%;
     height: 10rem;
@@ -358,5 +391,32 @@ a, a:link, a:visited {
     shape-outside: circle(50%); }
 
 /* 3 section workflow */
+/* 4 section counter */
+.sec-counter {
+  display: flex;
+  justify-content: center;
+  height: 40rem;
+  /* 640px */
+  padding: 3rem 6rem;
+  /* 39px 96rem */
+  background: linear-gradient(to left top, #e3a39660, #ffff0080), url("../../imgs/counter-bg-2000.jpg") center/cover no-repeat; }
+  .sec-counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; }
+  .sec-counter-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    text-align: center; }
+  .sec-counter-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+
+/* 4 section counter */
 /********* generals *********/
 /********* generals *********/
