@@ -231,3 +231,23 @@
     }
 }
 /* 6 section idea */
+/* 7 section comment */
+.sec-comment {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    padding: 4rem 3rem;
+    background-color: rgba(#b4bbbd, .7);
+
+    &-top {
+        flex: 0 20%;
+        display: flex;
+        justify-content: center;
+    }
+    &-bottom {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+/* 7 section comment */

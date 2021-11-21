@@ -1,0 +1,60 @@
+/* comment */
+.comment {
+    position: relative;
+    width: 20%;
+    height: 21rem;
+
+    // background-color: lightcyan;
+
+    &-img {
+        position: absolute;
+        z-index: 10;
+        top: -7%;
+        right: 5%;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        box-shadow: -4px 3px 4px 3px rgba($colorBlack, .3);
+    }
+    &-shadow {
+        height: 100%;
+        filter: drop-shadow(-1px 6px 3px rgba(#323200, .5));
+    }
+    &-content {/* img flow dan ciktigi ve polygon burada tanmlndgi icn backgroundcolor da comment de degil burada tanimlandi */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; /* 21rem */
+        padding: 4rem 1rem;
+        background-color: rgba($colorWhite, .8);
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 25% 100%, 0% 75%);
+
+        &::before {
+            content: url('../imgs/left-quote.png');
+            position: absolute;
+            transform: scale(.7);
+            top: 3%;
+            left: 3%;
+            opacity: .4;
+        }
+    }
+    &-text {
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #504f4f;
+        text-align: justify;
+    }
+    &-author {
+        font-family: $fontSecondary;
+        font-weight: 200;
+        font-size: .8rem;
+        letter-spacing: 1px;
+        text-align: right;
+    }
+    &:nth-child(even) {
+        align-self: flex-end;
+    }
+}
+/* comment */

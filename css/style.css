@@ -35,19 +35,23 @@ a, a:link, a:visited {
 
 /********* globals *********/
 .t1 {
-  font: 800 2.3rem/1.3 'Nunito', sans-serif;
+  font: 800 2.3rem/1.3 "Nunito", sans-serif;
   /* 36.8px */
   color: #17015d; }
   .t1 span {
     display: block; }
 
 .t2 {
-  font: 800 2rem/1.2 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
   /* 32px */
   text-transform: capitalize;
   color: #17015d; }
   .t2-primary {
     color: #3dbe71; }
+  .t2-white {
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
 
 .t3 {
   font-size: 1.2rem;
@@ -358,6 +362,57 @@ a, a:link, a:visited {
     background-image: linear-gradient(to bottom right, rgba(84, 13, 110, 0.8), rgba(83, 45, 97, 0.6)); }
 
 /* card */
+/* comment */
+.comment {
+  position: relative;
+  width: 20%;
+  height: 21rem; }
+  .comment-img {
+    position: absolute;
+    z-index: 10;
+    top: -7%;
+    right: 5%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: -4px 3px 4px 3px rgba(0, 0, 0, 0.3); }
+  .comment-shadow {
+    height: 100%;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5)); }
+  .comment-content {
+    /* img flow dan ciktigi ve polygon burada tanmlndgi icn backgroundcolor da comment de degil burada tanimlandi */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* 21rem */
+    padding: 4rem 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 25% 100%, 0% 75%); }
+    .comment-content::before {
+      content: url("../imgs/left-quote.png");
+      position: absolute;
+      transform: scale(0.7);
+      top: 3%;
+      left: 3%;
+      opacity: .4; }
+  .comment-text {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #504f4f;
+    text-align: justify; }
+  .comment-author {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-align: right; }
+  .comment:nth-child(even) {
+    align-self: flex-end; }
+
+/* comment */
 /********* pages *********/
 /* 1 section info */
 .sec-info {
@@ -558,5 +613,22 @@ a, a:link, a:visited {
     letter-spacing: 2px; }
 
 /* 6 section idea */
+/* 7 section comment */
+.sec-comment {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  padding: 4rem 3rem;
+  background-color: rgba(180, 187, 189, 0.7); }
+  .sec-comment-top {
+    flex: 0 20%;
+    display: flex;
+    justify-content: center; }
+  .sec-comment-bottom {
+    flex: 1;
+    display: flex;
+    justify-content: space-around; }
+
+/* 7 section comment */
 /********* generals *********/
 /********* generals *********/
