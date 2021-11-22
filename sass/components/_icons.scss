@@ -1,25 +1,71 @@
 /********* sosial media icons *********/
 .icons {
+
+    &-header {
+        position: absolute;
+        top: 2%;
+        right: 10%;
+    }
     &-list {
         display: flex;
+    }
+    &-item {
     }
     &-link {
         &,
         &:link,
         &:active {
+            display: block;
             padding: 0.5rem;
         }
         &:hover,
         &:active {
-            .fab {
-                color: $colorSecondary;
+            svg {
+                fill: $colorSecondary;
             }
         }
     }
-    &-fab {
+    &-icon {
         width: 1rem;
         height: 1rem;
-        color: $colorPrimary;
+        fill: $colorPrimary;
+    }
+    &-footer {
+        margin-top: 1rem;
+
+        .icons-item {
+            margin-right: 3px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .icons-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &,
+            &:hover,
+            &:visited {
+                border: 2px solid $colorPrimary;
+                border-radius: 50%;
+            }
+            &:hover,
+            &:active {
+                border: 2px solid rgba($colorSecondary, .7);
+                background-color: $colorPrimary;
+                
+                svg {
+                    fill: $colorWhite
+                }
+            }
+        }
+        .icons-icon {
+            width: 1.1rem;
+            height: 1.1rem;
+            fill: $colorPrimary;
+        }
     }
 }
 /********* sosial media icons *********/

@@ -1,0 +1,30 @@
+/* contact */
+.contact {
+    width: 100%;
+    height: 100%;
+
+    &-list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #909090;
+        font-weight: 300;
+    }
+    &-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    &-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: .5rem;
+        fill: $colorPrimary;
+    }
+    &-span {}
+}
+/* contact */

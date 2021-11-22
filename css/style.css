@@ -86,12 +86,75 @@ a, a:link, a:visited {
   position: relative;
   min-height: 8rem;
   /* 128px */ }
-  .header-icons {
-    position: absolute;
-    top: 2%;
-    right: 10%; }
 
 /********* header *********/
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  box-shadow: 3px -3px 7px 10px rgba(0, 0, 0, 0.2); }
+  .footer-top {
+    flex: 0 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+    background-color: #ecececec; }
+  .footer-contact {
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid rgba(61, 190, 113, 0.5); }
+  .footer-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between; }
+  .footer-header {
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: capitalize; }
+  .footer-underline {
+    display: block;
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    background-color: #3dbe71; }
+  .footer-list {
+    margin-top: 1rem;
+    line-height: 2; }
+  .footer-item {
+    position: relative;
+    text-indent: 1.5rem; }
+    .footer-item::before {
+      content: url("../imgs/sign.png");
+      position: absolute;
+      top: 0;
+      left: -10%;
+      transform: scale(0.4); }
+  .footer-link, .footer-link:link, .footer-link:visited {
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #909090; }
+  .footer-link:hover, .footer-link:active {
+    color: #3dbe71; }
+  .footer-bottom {
+    flex: 1;
+    /* 15% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5db380; }
+  .footer-copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px; }
+
+/* footer */
 /********* components *********/
 /********** btn **********/
 /* btn */
@@ -227,19 +290,48 @@ a, a:link, a:visited {
 
 /********* navbar navigation  *********/
 /********* sosial media icons *********/
+.icons-header {
+  position: absolute;
+  top: 2%;
+  right: 10%; }
+
 .icons-list {
   display: flex; }
 
 .icons-link, .icons-link:link, .icons-link:active {
+  display: block;
   padding: 0.5rem; }
 
-.icons-link:hover .fab, .icons-link:active .fab {
-  color: #17015d; }
+.icons-link:hover svg, .icons-link:active svg {
+  fill: #17015d; }
 
-.icons-fab {
+.icons-icon {
   width: 1rem;
   height: 1rem;
-  color: #3dbe71; }
+  fill: #3dbe71; }
+
+.icons-footer {
+  margin-top: 1rem; }
+  .icons-footer .icons-item {
+    margin-right: 3px; }
+    .icons-footer .icons-item:last-child {
+      margin-right: 0; }
+  .icons-footer .icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .icons-footer .icons-link, .icons-footer .icons-link:hover, .icons-footer .icons-link:visited {
+      border: 2px solid #3dbe71;
+      border-radius: 50%; }
+    .icons-footer .icons-link:hover, .icons-footer .icons-link:active {
+      border: 2px solid rgba(23, 1, 93, 0.7);
+      background-color: #3dbe71; }
+      .icons-footer .icons-link:hover svg, .icons-footer .icons-link:active svg {
+        fill: #fff; }
+  .icons-footer .icons-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: #3dbe71; }
 
 /********* sosial media icons *********/
 /* counter */
@@ -413,6 +505,31 @@ a, a:link, a:visited {
     align-self: flex-end; }
 
 /* comment */
+/* contact */
+.contact {
+  width: 100%;
+  height: 100%; }
+  .contact-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #909090;
+    font-weight: 300; }
+  .contact-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%; }
+  .contact-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: .5rem;
+    fill: #3dbe71; }
+
+/* contact */
 /********* pages *********/
 /* 1 section info */
 .sec-info {

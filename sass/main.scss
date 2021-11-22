@@ -8,6 +8,7 @@
 
 /********* layouts *********/
 @import './layouts/header';
+@import './layouts/footer';
 
 /********* components *********/
 @import './components/buttons';
@@ -16,6 +17,7 @@
 @import './components/counter';
 @import './components/card';
 @import './components/comment';
+@import './components/contact';
 
 /********* pages *********/
 @import './pages/home';
