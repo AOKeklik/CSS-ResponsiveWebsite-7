@@ -8,9 +8,23 @@
 
     // background-color: lightsalmon;
 
+    @media only screen and (max-width: 768px) {
+        height: 30rem;
+        padding: 1rem 3rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+        height: 45rem;
+        padding: 1rem;
+    }
+
     &-container {
         display: flex;
         height: 100%;
+
+        @media only screen and (max-width: 480px) {
+            flex-direction: column-reverse;
+        }
     }
     &-left {
         flex: 0 0 50%;
@@ -21,6 +35,14 @@
         height: 65%;
 
         // background-color: lightcyan;
+
+        @media only screen and (max-width: 768px) {
+            height: 80%;
+        }
+        @media only screen and (max-width: 480px) {
+            align-items: center;
+            text-align: center;
+        }
     }
     &-right {
         flex: 1;
@@ -29,6 +51,10 @@
         align-items: center;
 
         // background-color: lightgoldenrodyellow;
+
+        @media only screen and (max-width: 480px) {
+            height: 50%;
+        }
     }
     &-img {
         width: 90%;

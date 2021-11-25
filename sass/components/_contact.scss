@@ -3,6 +3,15 @@
     width: 100%;
     height: 100%;
 
+    // background-color: lightcyan;
+
+    @media only screen and (max-width: 768px) {
+        height: 80%;
+    }
+    @media only screen and (max-width: 480px) {
+        height: 90%;
+    }
+
     &-list {
         display: flex;
         align-items: center;
@@ -10,6 +19,18 @@
         height: 100%;
         color: #909090;
         font-weight: 300;
+
+        // background-color: lightgreen;
+
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 480px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
     &-item {
         flex: 1;
@@ -18,12 +39,20 @@
         justify-content: center;
         align-items: center;
         height: 50%;
+
+        @media only screen and (max-width: 768px) {
+            flex: 0 34%;
+        }
     }
     &-icon {
         width: 1.5rem;
         height: 1.5rem;
         margin-bottom: .5rem;
         fill: $colorPrimary;
+
+        @media only screen and (max-width: 480px) {
+            margin-bottom: 0;
+        }
     }
     &-span {}
 }

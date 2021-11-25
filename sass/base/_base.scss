@@ -1,6 +1,14 @@
 /********* fonts *********/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&family=Open+Sans:wght@300;400;600;700&display=swap');
 /********* fonts *********/
+/*
+mobile portrait -   (0 - 375px)
+mobile landscape -   (376px - 480px)
+tablet portrait -   (481px - 768px)
+tablet landscape & small laptop -   (769px - 1024px)
+generic laptop & desktop   (1025px - 1824px)
+large screen (1825px - )
+*/
 /********* globals *********/
 *, *::after, *::before {
     padding: 0;
@@ -11,6 +19,10 @@
 }
 html {
     font-size: 100%; /* 16px */
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 90%; /* 14,4px */
+    }
 }
 body {
     box-sizing: border-box;

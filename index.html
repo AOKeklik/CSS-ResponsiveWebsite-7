@@ -12,19 +12,40 @@
     <div class="container">
 <!-- header -->
         <header class="header">
-            <img  class="header-brand" src="imgs/logo-big.png" alt="brand" />
+            <img  
+                class="header-brand" 
+                srcset="./imgs/logo-big.png 205w, ./imgs/logo-small.png 180w" 
+                sizes="(min-width: 1024px) 205px, 180px"
+                src="imgs/logo-big.png" 
+                alt="brand"
+            />
             <div class="navbar">
-                <nav class="navbar-nav">                
-                    <ul class="navbar-list">
-                        <li class="navbar-item"><a href="#" class="navbar-link"><span>Home</span><span>Home</span></a></li>
-                        <li class="navbar-item"><a href="#" class="navbar-link"><span>About</span><span>About</span></a></li>
-                        <li class="navbar-item"><a href="#" class="navbar-link"><span>Services</span><span>Services</span></a></li>
-                        <li class="navbar-item"><a href="#" class="navbar-link"><span>Referances</span><span>Referances</span></a></li>
-                        <li class="navbar-item"><a href="#" class="navbar-link"><span>Blog</span><span>Blog</span></a></li>
-                        <li class="navbar-item"><a href="#" class="navbar-link"><span>Contact</span><span>Contact</span></a></li>
+                <input class="navbar-checkbox" type="checkbox" id="checkbox">
+                <label class="navbar-button" for="checkbox">
+                    <span class="navbar-line"></span>
+                </label>
+                <nav class="nav-top">             
+                    <ul class="nav-top-list">
+                        <li class="nav-top-item"><a href="index.html" class="nav-top-link">Home</a></li>
+                        <li class="nav-top-item"><a href="#" class="nav-top-link">About</span></a></li>
+                        <li class="nav-top-item"><a href="#" class="nav-top-link">Services</a></li>
+                        <li class="nav-top-item"><a href="#" class="nav-top-link">Referances</a></li>
+                        <li class="nav-top-item"><a href="#" class="nav-top-link">Blog</a></li>
+                        <li class="nav-top-item"><a href="#" class="nav-top-link">Contact</a></li>
                     </ul> 
+                    <button class="nav-top-btn btn btn-primary "><span>login</span><span>login</span></button>
+                </nav>                
+                <nav class="nav-bottom">                
+                    <ul class="nav-bottom-list">
+                        <li class="nav-bottom-item"><a href="index.html" class="nav-bottom-link">Home</a></li>
+                        <li class="nav-bottom-item"><a href="#" class="nav-bottom-link">About</a></li>
+                        <li class="nav-bottom-item"><a href="#" class="nav-bottom-link">Services</a></li>
+                        <li class="nav-bottom-item"><a href="#" class="nav-bottom-link">Referances</a></li>
+                        <li class="nav-bottom-item"><a href="#" class="nav-bottom-link">Blog</a></li>
+                        <li class="nav-bottom-item"><a href="#" class="nav-bottom-link">Contact</a></li>
+                    </ul>
+                    <button class="nav-bottom-btn btn btn-primary btn-middle"><span>login</span><span>login</span></button>
                 </nav>
-                <button class="btn btn-primary"><span>login</span><span>login</span></button>
             </div>
             <nav class="icons icons-header">
                 <ul class="icons-list">
@@ -52,15 +73,21 @@
             <div class="sec-info-container">
                 <div class="sec-info-left">
                     <h1 class="t1">
-                        <span>Lorem, ipsum dolor sit amet</span> 
-                        <span>consectetur adipisicing elit. </span>
+                        <span>Lorem, dolor sit amet</span> 
+                        <span>consectetur adipisicing. </span>
                         <span>Rerum! Minima fugiat beatae quos.</span>
                     </h1>
                     <p class="t4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non maiores iure nobis deleniti dolorem quidem! Hic magnam aut dolorem rerum. Fugit iure obcaecati sed possimus nostrum praesentium dicta assumenda?</p>
                     <button class="btn btn-primary btn-middle"><span>continue</span><span>continue</span></button>
                 </div>
                 <div class="sec-info-right">
-                    <img class="sec-info-img" src="imgs/programming-1000.png" alt="info-img">
+                    <img 
+                        class="sec-info-img" 
+                        srcset="./imgs/programming-2000.png 2000w, ./imgs/programming-1000.png 1000w, ./imgs/programming-500.png 500w"
+                        sizes="(max-width: 480px) 300px, (max-width: 768px) 1000px, 2000px"
+                        src="imgs/programming-1000.png"
+                        alt="info-img"
+                    />
                 </div>
             </div>
         </section>

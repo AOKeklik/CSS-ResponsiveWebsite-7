@@ -5,6 +5,13 @@
     span {
         display: block;
     }
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 1.6rem;
+    }
 }
 .t2 {
     font-family: $fontSecondary;

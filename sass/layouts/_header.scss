@@ -1,12 +1,30 @@
 /********* header *********/
 .header {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+    width: 100%;
     min-height: 8rem; /* 128px */
+
     // background-color: lightblue;
 
-    &-brand { }
+    &-brand {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+
+        @media only screen and(max-width: 768px) {
+            left: 15%;
+        }
+        @media only screen and(max-width: 480px) {
+            left: 23%;
+        }
+        @media only screen and(max-width: 375px) {
+            left: 30%;
+        }
+    }
 }
 /********* header *********/

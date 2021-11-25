@@ -3,11 +3,19 @@
 
     &-header {
         position: absolute;
-        top: 2%;
+        top: 1%;
         right: 10%;
+
+        @media only screen and(max-width: 768px) {
+            right: 1%;
+        }
     }
     &-list {
         display: flex;
+
+        @media only screen and(max-width: 768px) {
+            justify-content: space-evenly;
+        }
     }
     &-item {
     }

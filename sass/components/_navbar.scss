@@ -1,116 +1,230 @@
 /********* navbar navigation  *********/
 .navbar {
-    flex: 0 75%;
+    position: relative;
+    flex: 0 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    height: 30px;
 
-    // background-color: lightcoral;
+    // background-color: lightcyan;
 
-    &-nav {
-        flex: 0 1 80%;
-        display: flex;
-        align-items: center;
-
-        // background-color: lightgoldenrodyellow;
+    @media only screen and (max-width: 768px) {
+        flex: 0 100%;
     }
-    &-list {
-        flex-basis: 80%;
-        display: flex;
-        justify-content: space-between;
 
-        // background-color: lightgray;
+    &-checkbox {
+        display: none;
     }
-    &-item {
+    &-button {
+        visibility: hidden;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 2.5rem;
+        height: 2rem;
+        border-radius: 2px;
+        background-color: $colorPrimary;
+
+        @media only screen and(max-width: 768px) {
+            visibility: visible;
+        }
     }
-    &-link {
-        position: relative;
+    &-line {
+        // display: block;   
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.4rem;
+        height: 2.5px;
+        background-color: $colorWhite;
 
-        span {
-            pointer-events: none;
-
-            &:first-child {
-                position: relative;
-                // left: 0;
-                // bottom: 0;
-                top: 0;
-                right: 0;
-
-                transition-property: right, opacity;
-                // transition-property: bottom, opacity;
-                transition-duration: 0.3s, 0.1s;
-                transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1);
-            }
-            &:last-child {
-                opacity: 0;
-                position: absolute;
-                // top: 100%;
-                // left: 50%;
-                // transform: translateX(-50%);
-                top: 49%;
-                left: 100%;
-                transform: translateY(-50%);
-
-                transition-property: left, opacity;
-                // transition-property: top, opacity;
-                transition-duration: 0.3s;
-                transition-timing-function: cubic-bezier(0.02, 0.04, 0.28, 2.1);
-            }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            width: 1.4rem;
+            height: 2.5px;
+            background-color: $colorWhite;
         }
         &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 0%;
-            height: 3px;
-
-            transition: width 0s, background-color 0.3s;
+            top: -6px;
         }
         &::after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: -5px;
-            width: 0%;
-            height: 3px;
-            background-color: $colorPrimary;
+            top: 6px;
+        }
+    }
+    .nav-top {
+        flex: 0 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-            transition: width 0.3s;
+        // background-color: lightcoral;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
         }
-        &:link,
-        &:visited {
-            color: rgba($colorBlack, 0.7);
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            font-weight: 600;
+    
+        &-list {
+            flex-basis: 80%;
+            display: flex;
+            justify-content: space-around;
+
         }
-        &:hover,
-        &:active {
+        &-item {
+        }
+        &-link {
+            position: relative;
+
             &::before {
-                width: 100%;
-                background-color: $colorPrimary;
-                transition: width 0.3s;
+                content: '';
+                position: absolute;
+                bottom: -.5rem;
+                left: 0;
+                width: 0%;
+                height: 3px;
+                background-color: transparent;
+                transition: width 0s;
             }
             &::after {
-                width: 100%;
-                background-color: transparent;
-                transition: all 0s;
+                content: '';
+                position: absolute;
+                bottom: -.5rem;
+                right: 0;
+                width: 0%;
+                height: 3px;
+                background-color: $colorPrimary;
+                transition: width .5s;
             }
-            span {
-                &:first-child {
-                    opacity: 0;
-                    // bottom: 100%;
-                    right: 100%;
+            &,
+            &:link,
+            &:visited {
+                color: rgba($colorBlack, 0.7);
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+            &:hover,
+            &:active {
+                &::before {
+                    width: 100%;
+                    background-color: $colorPrimary;
+                    transition: width .5s;
                 }
-                &:last-child {
-                    opacity: 1;
-                    // top: 50%;
-                    // transform: translate(-50%, -50%);
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                &::after {
+                    width: 100%;
+                    background-color: transparent;
+                    transition: width 0s;
                 }
             }
         }
     }
+
+    .nav-bottom {
+        visibility: hidden;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        top: 2rem;
+        left: 0;
+        width: 100%;
+        height: 24rem;
+        padding: 2rem 0;
+        background-color: rgba($colorBlack, 0.5);
+        box-shadow: 0 2px 5px 2px rgba($colorBlack, 0.2);
+        
+        -webkit-backdrop-filter: blur(.2rem);
+        backdrop-filter: blur(.2rem);
+
+        &-list {
+            flex: 0 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-btn {
+
+        }
+        &-item {
+
+        }
+        &-link {
+            position: relative;
+
+            // background-color: rosybrown;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 3px;
+                background: $colorPrimary;
+                
+                transition: width .5s;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0%;
+                width: 0%;
+                height: 3px;
+                background-color: transparent;
+
+                transition: width 0s;
+            }
+            &,
+            &:link,
+            &:visited {
+                display: block;
+                padding: .5rem 0;
+                font-size: 1.2rem;
+                color: $colorWhite;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            &:active,
+            &:hover {
+                
+                &::before {
+                    width: 100%;
+                    background-color: transparent;
+                    transition: width 0s;
+                }
+                &::after {
+                    width: 100%;
+                    background-color: $colorPrimary;
+                    transition: width .5s;
+                }
+            }
+        }
+    }
+
+    /* ANIMATION */
+    &-checkbox:checked + &-button > &-line {
+        animation: animation-navbutton .3s ease both;
+    }
+    &-checkbox:checked + &-button > &-line::before {
+        animation: animation-navbutton2 .5s ease both;
+    }
+    &-checkbox:checked + &-button > &-line::after {
+        animation: animation-navbutton3 .5s ease both;
+    }
+    &-checkbox:checked ~ .nav-bottom {
+        display: flex;
+        animation: animation-navbottom .5s ease .3s both;
+    }
+/* ANIMATION */
 }
 /********* navbar navigation  *********/

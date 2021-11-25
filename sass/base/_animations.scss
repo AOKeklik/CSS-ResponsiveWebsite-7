@@ -1,0 +1,41 @@
+@keyframes animation-navbutton {
+    0% {
+        background-color: $colorWhite;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+@keyframes animation-navbutton2 {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    30% {
+        transform: translateY(6px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(6px) rotate(45deg);
+    }
+}
+@keyframes animation-navbutton3 {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    30% {
+        transform: translateY(-6px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+@keyframes animation-navbottom {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 2rem;
+        opacity: 1;
+        visibility: visible;
+    }
+}
