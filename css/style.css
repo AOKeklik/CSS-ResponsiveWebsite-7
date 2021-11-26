@@ -164,8 +164,7 @@ a, a:link, a:visited {
       height: 30rem; } }
   @media only screen and (max-width: 480px) {
     .footer {
-      height: 45rem;
-      padding: 0; } }
+      height: 45rem; } }
   .footer-top {
     flex: 0 85%;
     display: flex;
@@ -360,9 +359,8 @@ a, a:link, a:visited {
     height: 2.5px;
     background-color: #fff; }
     .navbar-line::before, .navbar-line::after {
-      content: '';
+      content: ' ';
       position: absolute;
-      z-index: 10;
       left: 0;
       width: 1.4rem;
       height: 2.5px;
@@ -379,6 +377,9 @@ a, a:link, a:visited {
     @media only screen and (max-width: 768px) {
       .navbar .nav-top {
         display: none; } }
+    @media only screen and (max-width: 1825px) {
+      .navbar .nav-top {
+        flex: 0 75%; } }
     .navbar .nav-top-list {
       flex-basis: 80%;
       display: flex;
@@ -434,7 +435,6 @@ a, a:link, a:visited {
     -webkit-backdrop-filter: blur(0.2rem);
     backdrop-filter: blur(0.2rem); }
     .navbar .nav-bottom-list {
-      flex: 0 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -787,8 +787,12 @@ a, a:link, a:visited {
         height: 80%; } }
     @media only screen and (max-width: 480px) {
       .sec-info-left {
+        flex: 0 40%;
         align-items: center;
         text-align: center; } }
+    @media only screen and (max-width: 375px) {
+      .sec-info-left {
+        flex: 0 50%; } }
   .sec-info-right {
     flex: 1;
     display: flex;

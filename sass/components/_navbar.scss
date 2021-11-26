@@ -4,12 +4,14 @@
     flex: 0 90%;
     display: flex;
     justify-content: end;
+    // width: 90%;
     height: 30px;
 
     // background-color: lightcyan;
 
     @media only screen and (max-width: 768px) {
         flex: 0 100%;
+        // width: 100%;
     }
 
     &-checkbox {
@@ -18,12 +20,14 @@
     &-button {
         visibility: hidden;
         cursor: pointer;
+        // display: block;
         position: absolute;
         top: 50%;
         right: 0;
         transform: translate(-50%, -50%);
         width: 2.5rem;
         height: 2rem;
+        // padding: 4px;
         border-radius: 2px;
         background-color: $colorPrimary;
 
@@ -43,9 +47,9 @@
 
         &::before,
         &::after {
-            content: '';
+            content: ' ';
+            // display: block;
             position: absolute;
-            z-index: 10;
             left: 0;
             width: 1.4rem;
             height: 2.5px;
@@ -63,11 +67,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // width: 75%;
 
         // background-color: lightcoral;
 
         @media only screen and (max-width: 768px) {
             display: none;
+        }
+        @media only screen and (max-width: 1825px) {
+            flex: 0 75%;
+            // width: 75%;
         }
     
         &-list {
@@ -145,11 +154,12 @@
         backdrop-filter: blur(.2rem);
 
         &-list {
-            flex: 0 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+
+            // background-color: lightgreen;
         }
         &-btn {
 
