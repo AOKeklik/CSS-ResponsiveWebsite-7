@@ -26,6 +26,13 @@
         color: $colorWhite;
         text-shadow: 2px 2px rgba($colorBlack, .4);
     }
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 1.8rem;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
 }
 .t3 {
     font-size: 1.2rem; /* 19.2px */

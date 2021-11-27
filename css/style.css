@@ -70,6 +70,12 @@ a, a:link, a:visited {
   .t2-white {
     color: #fff;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
+  @media only screen and (max-width: 1024px) {
+    .t2 {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 480px) {
+    .t2 {
+      font-size: 1.5rem; } }
 
 .t3 {
   font-size: 1.2rem;
@@ -921,15 +927,32 @@ a, a:link, a:visited {
   padding: 4rem 0 2rem 0;
   /* 64px 0 32px 0 */
   background-color: #e3f5eb; }
+  @media only screen and (max-width: 540px) {
+    .sec-workflow {
+      padding: 4rem .5rem; } }
+  @media only screen and (max-width: 480px) {
+    .sec-workflow {
+      height: 80rem; } }
+  @media only screen and (max-width: 375px) {
+    .sec-workflow {
+      height: 86rem; } }
   .sec-workflow-top {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 70%;
-    height: 6rem;
-    /* 96px */
-    text-align: center; }
+    text-align: center;
+    background-color: lightsalmon; }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow-top {
+        width: 80%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-workflow-top {
+        width: 90%; } }
+    @media only screen and (max-width: 375px) {
+      .sec-workflow-top {
+        margin-bottom: 3rem; } }
   .sec-workflow-bottom {
     flex: 0 85%;
     display: flex; }
@@ -962,12 +985,23 @@ a, a:link, a:visited {
     flex-direction: column;
     justify-content: space-between; }
   .sec-workflow-box {
+    position: relative;
     width: 80%;
     height: 10rem;
-    /* 160px */ }
+    background-color: lightgreen; }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow-box {
+        width: 90%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-workflow-box {
+        width: 100%;
+        height: 11rem; } }
   .sec-workflow-heading {
     letter-spacing: 1px;
     margin-bottom: .5rem; }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow-heading {
+        font-size: 1rem; } }
   .sec-workflow-icon {
     float: left;
     width: 7rem;
@@ -977,6 +1011,28 @@ a, a:link, a:visited {
     border: 4px solid #e3a396;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     shape-outside: circle(50%); }
+    @media only screen and (max-width: 540px) {
+      .sec-workflow-icon {
+        z-index: 10; }
+        .sec-workflow-icon.right:only-of-type {
+          position: absolute;
+          top: 50%;
+          right: -65%;
+          transform: translate(50%, -50%); }
+        .sec-workflow-icon.left:only-of-type {
+          position: absolute;
+          top: 50%;
+          left: -105%;
+          transform: translate(50%, -50%); } }
+    @media only screen and (max-width: 375px) {
+      .sec-workflow-icon.left:only-of-type {
+        left: -120%; } }
+  @media only screen and (max-width: 768px) {
+    .sec-workflow-text {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 375px) {
+    .sec-workflow-text {
+      font-size: .9rem; } }
 
 /* 3 section workflow */
 /* 4 section counter */
