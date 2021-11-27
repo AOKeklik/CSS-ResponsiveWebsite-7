@@ -815,6 +815,16 @@ a, a:link, a:visited {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 1024px) {
+    .sec-features {
+      padding: 3rem; } }
+  @media only screen and (max-width: 768px) {
+    .sec-features {
+      height: 70rem; } }
+  @media only screen and (max-width: 480px) {
+    .sec-features {
+      height: 110rem;
+      padding: 3rem 0; } }
   .sec-features-top {
     display: flex;
     flex-direction: column;
@@ -822,15 +832,35 @@ a, a:link, a:visited {
     align-items: center;
     width: 70%;
     text-align: center; }
+    @media only screen and (max-width: 1024px) {
+      .sec-features-top {
+        width: 90%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-features-top {
+        margin-bottom: 1rem; } }
   .sec-features-heading {
     white-space: nowrap; }
   .sec-features-bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     width: 90%;
     height: 32rem;
     /* 512px */ }
+    @media only screen and (max-width: 1024px) {
+      .sec-features-bottom {
+        width: 100%;
+        height: 37rem; } }
+    @media only screen and (max-width: 768px) {
+      .sec-features-bottom {
+        height: 55rem; } }
+    @media only screen and (max-width: 480px) {
+      .sec-features-bottom {
+        height: 95rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center; } }
   .sec-features-feature {
     display: flex;
     flex-direction: column;
@@ -841,9 +871,43 @@ a, a:link, a:visited {
     height: 13rem;
     /* 208px */
     text-align: justify; }
+    @media only screen and (max-width: 1024px) {
+      .sec-features-feature {
+        justify-content: flex-start;
+        width: 30%;
+        height: 17rem; } }
+    @media only screen and (max-width: 768px) {
+      .sec-features-feature {
+        width: 45%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-features-feature {
+        justify-content: center;
+        width: 75%;
+        height: 15rem; } }
   .sec-features-icon {
-    font-size: 2.5rem;
-    color: #3dbe71; }
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #3dbe71; }
+  .sec-features-title {
+    white-space: nowrap; }
+    @media only screen and (max-width: 1024px) {
+      .sec-features-title {
+        font-size: 1rem; } }
+  @media only screen and (max-width: 1024px) {
+    .sec-features-desc {
+      font-size: 1.1rem; } }
+  @media only screen and (max-width: 540px) {
+    .sec-features-desc {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 480px) {
+    .sec-features-desc {
+      font-size: 1.1rem; } }
+  @media only screen and (max-width: 375px) {
+    .sec-features-desc {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 320px) {
+    .sec-features-desc {
+      font-size: .9rem; } }
 
 /* 2 section features */
 /* 3 section workflow */
