@@ -218,7 +218,7 @@
         width: 70%;
         text-align: center;
 
-        background-color: lightsalmon;
+        // background-color: lightsalmon;
 
         @media only screen and (max-width: 768px) {
             width: 80%;
@@ -260,6 +260,12 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
+
+        @media only screen and (max-width: 480px) {
+            & > .sec-workflow-box:nth-child(odd) {
+                padding-right: 1rem;
+            }
+        }
     }
     &-right {
         flex: 0 48%;
@@ -268,13 +274,19 @@
         justify-content: space-between;
 
         // background-color: lightgreen;
+
+        @media only screen and (max-width: 480px) {
+            & > .sec-workflow-box:nth-child(even) {
+                padding-left: 1rem;
+            }
+        }
     }
     &-box {
         position: relative;
         width: 80%;
         height: 10rem;
 
-        background-color: lightgreen;
+        // background-color: lightgreen;
 
         @media only screen and (max-width: 768px) {
             width: 90%;

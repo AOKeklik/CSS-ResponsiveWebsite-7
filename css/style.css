@@ -942,8 +942,7 @@ a, a:link, a:visited {
     justify-content: space-around;
     align-items: center;
     width: 70%;
-    text-align: center;
-    background-color: lightsalmon; }
+    text-align: center; }
     @media only screen and (max-width: 768px) {
       .sec-workflow-top {
         width: 80%; } }
@@ -979,16 +978,21 @@ a, a:link, a:visited {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end; }
+    @media only screen and (max-width: 480px) {
+      .sec-workflow-left > .sec-workflow-box:nth-child(odd) {
+        padding-right: 1rem; } }
   .sec-workflow-right {
     flex: 0 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 480px) {
+      .sec-workflow-right > .sec-workflow-box:nth-child(even) {
+        padding-left: 1rem; } }
   .sec-workflow-box {
     position: relative;
     width: 80%;
-    height: 10rem;
-    background-color: lightgreen; }
+    height: 10rem; }
     @media only screen and (max-width: 768px) {
       .sec-workflow-box {
         width: 90%; } }
