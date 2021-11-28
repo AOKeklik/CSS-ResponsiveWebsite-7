@@ -13,6 +13,9 @@
         flex: 0 100%;
         // width: 100%;
     }
+    @media only screen and (min-width: 1825px) {
+        flex: 0 75%;
+    }
 
     &-checkbox {
         display: none;
@@ -74,10 +77,11 @@
         @media only screen and (max-width: 768px) {
             display: none;
         }
-        @media only screen and (max-width: 1825px) {
-            flex: 0 75%;
+        @media only screen and (min-width: 1825px) {
+            flex: 0 70%;
             // width: 75%;
         }
+        
     
         &-list {
             flex-basis: 80%;

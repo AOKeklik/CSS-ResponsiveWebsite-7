@@ -40,6 +40,10 @@
             @media only screen and (max-width: 768px) {
                 transform: scale(1.2);
             }
+            @media only screen and (min-width: 1825px) {
+                top: 35%;
+                transform: scale(1.7);
+            }
         }
         &::after {
             content: 'Most \a popular.'; /* \a white-spacing pre */
@@ -58,6 +62,11 @@
             @media only screen and (max-width: 1024px) {
                 top: 36%;
                 right: 12%;
+            }
+            @media only screen and (min-width: 1825px) {
+                top: 36%;
+                right: 9%;
+                font-size: .8rem;
             }
         }
     }

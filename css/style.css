@@ -30,6 +30,10 @@ html {
     html {
       font-size: 90%;
       /* 14,4px */ } }
+  @media only screen and (min-width: 1825px) {
+    html {
+      font-size: 150%;
+      /* 24px */ } }
 
 body {
   box-sizing: border-box;
@@ -142,6 +146,11 @@ a, a:link, a:visited {
   width: 100%;
   min-height: 8rem;
   /* 128px */ }
+  @media only screen and (min-width: 1825px) {
+    .header {
+      margin-bottom: 4rem;
+      background-color: rgba(99, 183, 232, 0.2);
+      box-shadow: 3px -3px 7px 10px rgba(0, 0, 0, 0.2); } }
   .header-brand {
     position: absolute;
     z-index: 10;
@@ -157,6 +166,9 @@ a, a:link, a:visited {
     @media only screen and (max-width: 375px) {
       .header-brand {
         left: 30%; } }
+    @media only screen and (min-width: 1825px) {
+      .header-brand {
+        left: 15%; } }
 
 /********* header *********/
 /* footer */
@@ -341,6 +353,9 @@ a, a:link, a:visited {
   @media only screen and (max-width: 768px) {
     .navbar {
       flex: 0 100%; } }
+  @media only screen and (min-width: 1825px) {
+    .navbar {
+      flex: 0 75%; } }
   .navbar-checkbox {
     display: none; }
   .navbar-button {
@@ -384,9 +399,9 @@ a, a:link, a:visited {
     @media only screen and (max-width: 768px) {
       .navbar .nav-top {
         display: none; } }
-    @media only screen and (max-width: 1825px) {
+    @media only screen and (min-width: 1825px) {
       .navbar .nav-top {
-        flex: 0 75%; } }
+        flex: 0 70%; } }
     .navbar .nav-top-list {
       flex-basis: 80%;
       display: flex;
@@ -500,6 +515,9 @@ a, a:link, a:visited {
   @media only screen and (max-width: 768px) {
     .icons-header {
       right: 1%; } }
+  @media only screen and (min-width: 1825px) {
+    .icons-header {
+      right: 15%; } }
 
 .icons-list {
   display: flex; }
@@ -624,6 +642,10 @@ a, a:link, a:visited {
       @media only screen and (max-width: 768px) {
         .card:nth-child(2)::before {
           transform: scale(1.2); } }
+      @media only screen and (min-width: 1825px) {
+        .card:nth-child(2)::before {
+          top: 35%;
+          transform: scale(1.7); } }
     .card:nth-child(2)::after {
       content: 'Most \a popular.';
       /* \a white-spacing pre */
@@ -642,6 +664,11 @@ a, a:link, a:visited {
         .card:nth-child(2)::after {
           top: 36%;
           right: 12%; } }
+      @media only screen and (min-width: 1825px) {
+        .card:nth-child(2)::after {
+          top: 36%;
+          right: 9%;
+          font-size: .8rem; } }
   .card-top {
     flex: 0 45%;
     display: flex;
@@ -809,6 +836,14 @@ a, a:link, a:visited {
 
 /* contact */
 /********* pages *********/
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; }
+
+/* container */
 /* 1 section info */
 .sec-info {
   display: flex;
@@ -830,6 +865,9 @@ a, a:link, a:visited {
     @media only screen and (max-width: 480px) {
       .sec-info-container {
         flex-direction: column-reverse; } }
+    @media only screen and (min-width: 1825px) {
+      .sec-info-container {
+        width: 90%; } }
   .sec-info-left {
     flex: 0 0 50%;
     display: flex;
@@ -880,6 +918,9 @@ a, a:link, a:visited {
     .sec-features {
       height: 110rem;
       padding: 3rem 0; } }
+  @media only screen and (min-width: 1825px) {
+    .sec-features {
+      padding: 4rem 3rem; } }
   .sec-features-top {
     display: flex;
     flex-direction: column;
@@ -939,6 +980,9 @@ a, a:link, a:visited {
         justify-content: center;
         width: 75%;
         height: 15rem; } }
+    @media only screen and (min-width: 1825px) {
+      .sec-features-feature {
+        width: 31%; } }
   .sec-features-icon {
     width: 2.5rem;
     height: 2.5rem;
@@ -963,6 +1007,9 @@ a, a:link, a:visited {
   @media only screen and (max-width: 320px) {
     .sec-features-desc {
       font-size: .9rem; } }
+  @media only screen and (min-width: 1825px) {
+    .sec-features-desc {
+      font-size: 1rem; } }
 
 /* 2 section features */
 /* 3 section workflow */
@@ -1086,6 +1133,9 @@ a, a:link, a:visited {
   @media only screen and (max-width: 375px) {
     .sec-workflow-text {
       font-size: .9rem; } }
+  @media only screen and (max-width: 1825px) {
+    .sec-workflow-text {
+      font-size: 1rem; } }
 
 /* 3 section workflow */
 /* 4 section counter */
@@ -1183,6 +1233,9 @@ a, a:link, a:visited {
       .sec-card-cards {
         flex-wrap: nowrap;
         flex-direction: column; } }
+    @media only screen and (min-width: 1825px) {
+      .sec-card-cards {
+        width: 80%; } }
 
 /* 5 section card */
 /* 6 section idea */
@@ -1235,6 +1288,9 @@ a, a:link, a:visited {
   @media only screen and (max-width: 480px) {
     .sec-comment {
       height: 115rem; } }
+  @media only screen and (min-width: 1825px) {
+    .sec-comment {
+      align-items: center; } }
   .sec-comment-top {
     flex: 0 20%;
     display: flex;
@@ -1259,6 +1315,9 @@ a, a:link, a:visited {
         flex-direction: column;
         align-items: center;
         align-content: unset; } }
+    @media only screen and (min-width: 1825px) {
+      .sec-comment-bottom {
+        width: 90%; } }
 
 /* 7 section comment */
 /********* generals *********/

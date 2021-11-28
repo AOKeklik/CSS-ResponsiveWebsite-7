@@ -23,6 +23,9 @@ html {
     @media only screen and (max-width: 1024px) {
         font-size: 90%; /* 14,4px */
     }
+    @media only screen and (min-width: 1825px) {
+        font-size: 150%; /* 24px */
+    }
 }
 body {
     box-sizing: border-box;

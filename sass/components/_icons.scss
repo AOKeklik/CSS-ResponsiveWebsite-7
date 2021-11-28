@@ -9,6 +9,9 @@
         @media only screen and(max-width: 768px) {
             right: 1%;
         }
+        @media only screen and (min-width: 1825px) {
+            right: 15%;
+        }
     }
     &-list {
         display: flex;

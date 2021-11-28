@@ -9,6 +9,12 @@
 
     // background-color: lightblue;
 
+    @media only screen and (min-width: 1825px) {
+        margin-bottom: 4rem;
+        background-color: rgba(#63b7e8, .2);
+        box-shadow: 3px -3px 7px 10px rgba($colorBlack, .2);
+    }
+
     &-brand {
         position: absolute;
         z-index: 10;
@@ -24,6 +30,9 @@
         }
         @media only screen and(max-width: 375px) {
             left: 30%;
+        }
+        @media only screen and (min-width: 1825px) {
+            left: 15%;
         }
     }
 }
