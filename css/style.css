@@ -320,11 +320,12 @@ a, a:link, a:visited {
     .btn-danger:hover {
       background-color: #e8889c; }
   .btn-middle {
-    font-size: 0.9rem;
-    padding: 1.5rem 7rem; }
+    padding: 1.5rem 7rem;
+    font-size: 0.9rem; }
   .btn-large {
+    padding: 2rem 8rem;
     font-size: .9rem;
-    padding: 2rem 8rem; }
+    white-space: nowrap; }
 
 /* btn */
 /********** btn **********/
@@ -704,6 +705,15 @@ a, a:link, a:visited {
   position: relative;
   width: 20%;
   height: 21rem; }
+  @media only screen and (max-width: 768px) {
+    .comment {
+      width: 35%; } }
+  @media only screen and (max-width: 480px) {
+    .comment {
+      width: 65%; } }
+  @media only screen and (max-width: 375px) {
+    .comment {
+      width: 75%; } }
   .comment-img {
     position: absolute;
     z-index: 10;
@@ -717,7 +727,6 @@ a, a:link, a:visited {
     height: 100%;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5)); }
   .comment-content {
-    /* img flow dan ciktigi ve polygon burada tanmlndgi icn backgroundcolor da comment de degil burada tanimlandi */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -748,6 +757,9 @@ a, a:link, a:visited {
     text-align: right; }
   .comment:nth-child(even) {
     align-self: flex-end; }
+    @media only screen and (max-width: 768px) {
+      .comment:nth-child(even) {
+        align-self: unset; } }
 
 /* comment */
 /* contact */
@@ -1184,12 +1196,27 @@ a, a:link, a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
+  @media only screen and (max-width: 768px) {
+    .sec-idea {
+      background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(../../imgs/sec-idea-bg-1000.jpg); } }
+  @media only screen and (max-width: 480px) {
+    .sec-idea {
+      background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(../../imgs/sec-idea-bg-700.jpg); } }
   .sec-idea-heading {
     font-family: "Nunito", sans-serif;
     font-weight: 200;
     font-size: 3.5rem;
     color: #fff;
     letter-spacing: 2px; }
+    @media only screen and (max-width: 768px) {
+      .sec-idea-heading {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 480px) {
+      .sec-idea-heading {
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 375px) {
+      .sec-idea-heading {
+        font-size: 1.5rem; } }
 
 /* 6 section idea */
 /* 7 section comment */
@@ -1199,14 +1226,39 @@ a, a:link, a:visited {
   height: 40rem;
   padding: 4rem 3rem;
   background-color: rgba(180, 187, 189, 0.7); }
+  @media only screen and (max-width: 1024px) {
+    .sec-comment {
+      padding: 4rem 1rem; } }
+  @media only screen and (max-width: 768px) {
+    .sec-comment {
+      height: 63rem; } }
+  @media only screen and (max-width: 480px) {
+    .sec-comment {
+      height: 115rem; } }
   .sec-comment-top {
     flex: 0 20%;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .sec-comment-top {
+        flex: 0 15%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-comment-top {
+        flex: 0 5%; } }
   .sec-comment-bottom {
     flex: 1;
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 768px) {
+      .sec-comment-bottom {
+        flex-wrap: wrap;
+        align-content: space-between; } }
+    @media only screen and (max-width: 480px) {
+      .sec-comment-bottom {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        align-content: unset; } }
 
 /* 7 section comment */
 /********* generals *********/

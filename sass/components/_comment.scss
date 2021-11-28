@@ -6,6 +6,16 @@
 
     // background-color: lightcyan;
 
+    @media only screen and (max-width: 768px) {
+        width: 35%;
+    }
+    @media only screen and (max-width: 480px) {
+        width: 65%;
+    }
+    @media only screen and (max-width: 375px) {
+        width: 75%;
+    }
+
     &-img {
         position: absolute;
         z-index: 10;
@@ -20,7 +30,7 @@
         height: 100%;
         filter: drop-shadow(-1px 6px 3px rgba(#323200, .5));
     }
-    &-content {/* img flow dan ciktigi ve polygon burada tanmlndgi icn backgroundcolor da comment de degil burada tanimlandi */
+    &-content {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -55,6 +65,10 @@
     }
     &:nth-child(even) {
         align-self: flex-end;
+
+        @media only screen and (max-width: 768px) {
+            align-self: unset;
+        }
     }
 }
 /* comment */

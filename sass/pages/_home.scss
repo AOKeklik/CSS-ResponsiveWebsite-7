@@ -473,12 +473,29 @@
     background-size: cover;
     background-attachment: fixed;
 
+    @media only screen and (max-width: 768px) {
+        background-image: linear-gradient(to bottom right, rgba($colorWhite, .6), rgba($colorWhite, .5)), url(../../imgs/sec-idea-bg-1000.jpg);
+    }
+    @media only screen and (max-width: 480px) {
+        background-image: linear-gradient(to bottom right, rgba($colorWhite, .6), rgba($colorWhite, .5)), url(../../imgs/sec-idea-bg-700.jpg);
+    }
+
     &-heading {
         font-family: $fontSecondary;
         font-weight: 200;
         font-size: 3.5rem;
         color: $colorWhite;
         letter-spacing: 2px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 3rem;
+        }
+        @media only screen and (max-width: 480px) {
+            font-size: 2.2rem;
+        }
+        @media only screen and (max-width: 375px) {
+            font-size: 1.5rem;
+        }
     }
 }
 /* 6 section idea */
@@ -490,15 +507,47 @@
     padding: 4rem 3rem;
     background-color: rgba(#b4bbbd, .7);
 
+    @media only screen and (max-width: 1024px) {
+        padding: 4rem 1rem
+    }
+    @media only screen and (max-width: 768px) {
+        height: 63rem;
+    }
+    @media only screen and (max-width: 480px) {
+        height: 115rem;
+    }
+
     &-top {
         flex: 0 20%;
         display: flex;
         justify-content: center;
+
+        // background-color: lightcoral;
+
+        @media only screen and (max-width: 768px) {
+            flex: 0 15%;
+        }
+        @media only screen and (max-width: 480px) {
+            flex: 0 5%;
+        }
     }
     &-bottom {
         flex: 1;
         display: flex;
         justify-content: space-around;
+
+        // background-color: lightcyan;
+
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        @media only screen and (max-width: 480px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            align-content: unset;
+        }
     }
 }
 /* 7 section comment */
