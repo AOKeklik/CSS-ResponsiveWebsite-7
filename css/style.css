@@ -3,6 +3,14 @@
 /* font color */
 /* font family */
 /* general color */
+/*
+mobile portrait -   (0 - 375px)
+mobile landscape -   (376px - 480px)
+tablet portrait -   (481px - 768px)
+tablet landscape & laptop -   (769px - 1024px)
+desktop   (1025px - 1200px)
+large screen (1825px - )
+*/
 /********* base *********/
 /********* fonts *********/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;800&family=Open+Sans:wght@300;400;600;700&display=swap");
@@ -37,7 +45,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #504f4f; }
@@ -135,6 +143,16 @@ a, a:link, a:visited {
     top: 2rem;
     opacity: 1;
     visibility: visible; } }
+
+@keyframes animation-secInfo {
+  0% {
+    opacity: 0;
+    transform: scale(0.93); }
+  65% {
+    opacity: 1;
+    transform: scale(1.02); }
+  100% {
+    transform: scale(1); } }
 
 /********* layouts *********/
 /********* header *********/
@@ -850,7 +868,8 @@ a, a:link, a:visited {
   justify-content: center;
   align-items: center;
   height: 39rem;
-  padding: 4rem 6rem 1rem 6rem; }
+  padding: 4rem 6rem 1rem 6rem;
+  animation: animation-secInfo .4s ease-out; }
   @media only screen and (max-width: 768px) {
     .sec-info {
       height: 30rem;
@@ -874,10 +893,19 @@ a, a:link, a:visited {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 65%; }
-    @media only screen and (max-width: 768px) {
-      .sec-info-left {
-        height: 80%; } }
+    height: 65%;
+    /* @media only screen and (max-width: 768px) {
+            height: 80%;
+        }
+        @media only screen and (max-width: 480px) {
+            flex: 0 40%;
+            align-items: center;
+            text-align: center;
+        }
+        @media only screen and (max-width: 375px) {
+            // height: 50%;
+            flex: 0 50%;
+        } */ }
     @media only screen and (max-width: 480px) {
       .sec-info-left {
         flex: 0 40%;

@@ -1,0 +1,21 @@
+/*
+mobile portrait -   (0 - 375px)
+mobile landscape -   (376px - 480px)
+tablet portrait -   (481px - 768px)
+tablet landscape & laptop -   (769px - 1024px)
+desktop   (1025px - 1200px)
+large screen (1825px - )
+*/
+
+@mixin responsive($breakPoint) {
+    @if $breakPoint == 375px {
+        @media only screen and (max-width: $breakPoint) {
+            @content;
+        }
+    }
+    @elseif $breakPoint == 480px {
+        @media only screen and (max-width: $breakPoint) {
+            @content;
+        }
+    }
+}

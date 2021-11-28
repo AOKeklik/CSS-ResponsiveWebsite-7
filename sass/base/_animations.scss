@@ -39,3 +39,16 @@
         visibility: visible;
     }
 }
+@keyframes animation-secInfo {
+    0% {
+        opacity: 0;
+        transform: scale(.93);
+    }
+    65% {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
