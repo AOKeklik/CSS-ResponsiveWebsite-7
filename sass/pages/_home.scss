@@ -431,12 +431,33 @@
     padding: 4rem 5rem 2rem 5rem;
     background-color: #edeeee;
 
+    @media only screen and (max-width: 1024px) {
+        padding: 4rem 1rem 2rem;
+    }
+    @media only screen and (max-width: 768px) {
+        height: 90rem;
+    }
+    @media only screen and (max-width: 480px) {
+        justify-content: space-around;
+        height: 125rem;
+    }
+
     &-cards {
-        flex: 0 0 90%;
+        flex: 0 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
+        @media only screen and (max-width: 768px) {
+            flex: 0 95%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media only screen and (max-width: 480px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
     }
 }
 /* 5 section card */
