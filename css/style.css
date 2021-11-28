@@ -553,10 +553,24 @@ a, a:link, a:visited {
   padding: 3rem 1rem;
   border: 2px solid #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+  @media only screen and (max-width: 768px) {
+    .counter {
+      width: 45%;
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 480px) {
+    .counter {
+      width: 47%; } }
+  @media only screen and (max-width: 375px) {
+    .counter {
+      width: 75%; } }
   .counter-icon {
     width: 3rem;
     height: 3rem;
     fill: #fff; }
+    @media only screen and (max-width: 768px) {
+      .counter-icon {
+        width: 2.2rem;
+        height: 2.2rem; } }
   .counter-num {
     font-family: "Nunito", sans-serif;
     font-weight: 200;
@@ -568,7 +582,8 @@ a, a:link, a:visited {
     font-weight: 800;
     letter-spacing: 1px;
     color: #fff;
-    white-space: nowrap; }
+    white-space: nowrap;
+    text-transform: capitalize; }
 
 /* counter */
 /* card */
@@ -1048,22 +1063,56 @@ a, a:link, a:visited {
   padding: 3rem 6rem;
   /* 39px 96rem */
   background: linear-gradient(to left top, #e3a39660, #ffff0080), url("../imgs/counter-bg-2000.jpg") center/cover no-repeat; }
+  @media only screen and (max-width: 1024px) {
+    .sec-counter {
+      padding: 3rem 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .sec-counter {
+      height: 50rem;
+      background: linear-gradient(to left top, #e3a39660, #ffff0080), url("../imgs/counter-bg-1000.jpg") center/cover no-repeat; } }
+  @media only screen and (max-width: 480px) {
+    .sec-counter {
+      height: 55rem;
+      padding: 3rem .5rem;
+      background: linear-gradient(to left top, #e3a39660, #ffff0080), url("../imgs/counter-bg-700.jpg") center/cover no-repeat; } }
+  @media only screen and (max-width: 375px) {
+    .sec-counter {
+      height: 90rem; } }
   .sec-counter-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 80%; }
+    @media only screen and (max-width: 480px) {
+      .sec-counter-container {
+        width: 100%; } }
   .sec-counter-top {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .sec-counter-top {
+        width: 100%;
+        margin-bottom: 1rem; } }
   .sec-counter-bottom {
     display: flex;
     justify-content: space-between;
     width: 100%; }
+    @media only screen and (max-width: 768px) {
+      .sec-counter-bottom {
+        flex-wrap: wrap;
+        width: 80%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-counter-bottom {
+        width: 90%; } }
+    @media only screen and (max-width: 375px) {
+      .sec-counter-bottom {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center; } }
 
 /* 4 section counter */
 /* 5 section card */

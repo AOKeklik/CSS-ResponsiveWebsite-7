@@ -354,8 +354,23 @@
     justify-content: center;
     height: 40rem; /* 640px */
     padding: 3rem 6rem; /* 39px 96rem */
-
     background: linear-gradient(to left top, #e3a39660, #ffff0080), url('../imgs/counter-bg-2000.jpg') center/cover no-repeat;
+
+    @media only screen and (max-width: 1024px) {
+        padding: 3rem 2rem;
+    }
+    @media only screen and (max-width: 768px) {
+        height: 50rem;
+        background: linear-gradient(to left top, #e3a39660, #ffff0080), url('../imgs/counter-bg-1000.jpg') center/cover no-repeat;
+    }
+    @media only screen and (max-width: 480px) {
+        height: 55rem;
+        padding: 3rem .5rem;
+        background: linear-gradient(to left top, #e3a39660, #ffff0080), url('../imgs/counter-bg-700.jpg') center/cover no-repeat;
+    }
+    @media only screen and (max-width: 375px) {
+        height: 90rem;
+    }
 
     &-container {
         display: flex;
@@ -365,6 +380,10 @@
         width: 80%;
 
         // background-color: lightsalmon;
+
+        @media only screen and (max-width: 480px) {
+            width: 100%;
+        }
     }
     &-top {
         display: flex;
@@ -374,6 +393,11 @@
         text-align: center;
 
         // background-color: lightskyblue;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
     &-bottom {
         display: flex;
@@ -381,6 +405,19 @@
         width: 100%;
 
         // background-color: lightsalmon;
+
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            width: 80%;
+        }
+        @media only screen and (max-width: 480px) {
+            width: 90%;
+        }
+        @media only screen and (max-width: 375px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 /* 4 section counter */
